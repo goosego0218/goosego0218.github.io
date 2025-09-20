@@ -1,0 +1,8 @@
+{
+  "label": "Activation Function",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Comprehensive notes on activation functions: their mathematical definitions, properties, and roles in deep neural networks."
+  }
+}

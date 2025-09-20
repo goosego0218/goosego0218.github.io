@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import math from 'remark-math';
+import katex from 'rehype-katex';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -33,6 +35,14 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: { defaultLocale: 'en', locales: ['en'] },
 
+  // KaTeX CSS
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css',
+      type: 'text/css',
+    },
+  ],
+
   // Velog RSS 플러그인 등록
   // plugins: [
   //   [
@@ -60,6 +70,10 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+
+          // docs 전용으로 katex 명시 적용
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: false, 
         theme: { customCss: './src/css/custom.css' },

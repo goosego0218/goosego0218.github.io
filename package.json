@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "prestart": "node scripts/fetch-velog.mjs",
+    "prebuild": "node scripts/fetch-velog.mjs",
+
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -21,7 +24,8 @@
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.8.1",
@@ -29,19 +33,6 @@
     "@docusaurus/types": "3.8.1",
     "typescript": "~5.6.2"
   },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 3 chrome version",
-      "last 3 firefox version",
-      "last 5 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=18.0"
-  }
+  "browserslist": { "...": "생략" },
+  "engines": { "node": ">=18.0" }
 }

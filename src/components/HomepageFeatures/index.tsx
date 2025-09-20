@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Machine Learning',
+    Svg: require('@site/static/img/machine-learning.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        데이터 분석, 모델링 기법, 평가 지표 등
+        머신러닝의 핵심 개념과 예제를 정리했습니다.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Deep Learning',
+    Svg: require('@site/static/img/deep-learning.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        신경망, 최적화, 최신 아키텍처까지
+        딥러닝의 핵심 개념과 예제를 정리했습니다.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'DevOps & Cloud Infrastructure',
+    Svg: require('@site/static/img/kubernetes.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        쿠버네티스, CI/CD, 클라우드 환경 구축 등
+        실무 메모와 설정 방법을 기록합니다.
       </>
     ),
   },
